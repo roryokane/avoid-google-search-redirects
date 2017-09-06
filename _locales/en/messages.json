@@ -1,0 +1,24 @@
+{
+    "extensionName": {
+        "description": "Name of the extension.",
+        "message": "Avoid Google Search redirects"
+    },
+    
+    "extensionDescription": {
+        "description": "Description of the extension.",
+        "message": "Avoid Google Search to track you with redirects. \
+\
+When a user hover a Google Search result, target link seems to be the right one,\
+but, when user click on this link, the target is rewritten with a Google tracker\
+to save your click on Google Search engine.\
+\
+To achieve this, Google Search results uses an onmousedown event which calls a \
+rewrite of target link with a function called « rwt ».\
+\
+This extensions simply redefine this rwt function with an empty function, so\
+nothing happens on click and user go directly to its result.\
+\
+This is a fork of « Remove Google Redirect in Google Search Results » rewritten\
+as WebExtension with advises given in user comments."
+    },
+}
