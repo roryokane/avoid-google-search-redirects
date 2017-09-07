@@ -5,7 +5,7 @@
     },
     
     "extensionDescription": {
-        "description": "Description of the extension.",
-        "message": "Cette extension empêche Google Search de vous pister avec des liens redirigés.\r\n\r\nQuand un utilisateur survole un résultat de Google Search, la cible du lien semble être la bonne, mais, quand il clique sur ce lien, la cible est réécrite pour pointer vers un traqueur Google.\r\nCe traqueur est ensuite capable d'enregistrer votre clique dans les données du moteur de recherche de Google.\r\n\r\nPour ce faire, Google Search utilise un évennement sur les cliques de souris. Cet évennement est capable de réécrire la cible du lien grâce à une fonction nommée « rwt ».\r\nCette extension simplement redéfinit cette fonction rwt par une fonction vide, ainsi rien ne se passe lors du clique et l'utilisateur va directement vers son résultat.\r\n\r\nL'idée originale provient de l'extension « Remove Google Redirect in Google Search Results ».\r\nCette extension est distribuée comme WebExtension et elle est donc compatible avec les versions et technologies récentes de Firefox."
+        "description": "Description of the extension (less than 250 characters).",
+        "message": "Cette extension empêche Google Search de pister vos cliques sur les liens des résultas.\r\nLe principe est de désactiver un code JavaScript envoyé par Google qui réécrit la cible du lien."
     }
 }

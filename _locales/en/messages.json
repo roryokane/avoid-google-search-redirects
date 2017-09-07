@@ -5,7 +5,7 @@
     },
     
     "extensionDescription": {
-        "description": "Description of the extension.",
-        "message": "This add-on avoids Google Search to track you with redirect links.\r\n\r\nWhen a user hovers a Google Search result, target link seems to be the right one, but, when he clicks on this link, the target is rewritten with a redirection link to a Google tracker.\r\nThis tracker is then able to save your click in the Google Search engine data.\r\n\r\nTo achieve this, Google Search uses an onmousedown event on results. This event is able to rewrite the target link by using a function called « rwt ».\r\nThis add-on simply redefines this rwt function with an empty function, so nothing happens on click and user goes directly to its result.\r\n\r\nThe original idea comes from the « Remove Google Redirect in Google Search Results » add-on.\r\nThis add-on is packaged as WebExtension and so is compatible with recent Firefox releases and technologies."
+        "description": "Description of the extension (less than 250 characters).",
+        "message": "This add-on avoids Google Search to track your clicks on result links.\r\nThis principle is to disable a JavaScript code sent by Google which rewrites target links."
     }
 }
