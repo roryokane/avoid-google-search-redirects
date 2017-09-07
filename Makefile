@@ -16,4 +16,4 @@
 # along with Avoid Google Search redirects.If not, see <http://www.gnu.org/licenses/>.
 
 build:
-	zip --exclude Makefile -r ../avoid-google-search-redirects.zip *
+	zip ../avoid-google-search-redirects.zip -FS -r *
