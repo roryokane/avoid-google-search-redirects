@@ -3,7 +3,7 @@
   "manifest_version": 2,
   
   "name": "__MSG_extensionName__",
-  "version": "1",
+  "version": "2",
   
   "author": "Adrien Dorsaz",
   "homepage_url": "https://github.com/Trim/avoid-google-search-redirects",
