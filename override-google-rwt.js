@@ -17,9 +17,11 @@
  * along with Avoid Google Search redirects.If not, see <http://www.gnu.org/licenses/>.
  */
 
-currentURL = new URL(window.location.href)
+const currentURL = new URL(window.location.href);
+// can’t use `"matches": ["*://*.google.*/"]` in `manifest.json` because
+// `*` is only supported at the beginning of the hostname
+const currentURLIsAGoogleDomain = currentURL.hostname.match(/\.google(\.[^\.]+|\.co\.uk)$/);
 
-if (window.wrappedJSObject.rwt
-    && currentURL.hostname.match(/\.google\.[^\.]+$/)) {
+if (currentURLIsAGoogleDomain && window.wrappedJSObject.rwt) {
     window.wrappedJSObject.rwt = exportFunction(function() { }, window);
 }
